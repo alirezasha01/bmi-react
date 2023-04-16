@@ -1,9 +1,10 @@
 import './App.css';
+import RangeInput from './components/RangeInput'
 
 function App() {
   return (
     <>
-      <p>start project</p>
+      <RangeInput/>
     </>
   )
 }
