@@ -3,3 +3,17 @@ h1 , h4{
     margin-bottom: 30px !important;
     text-align: center !important;
 }
+.form-label{
+    font-size: 17px;
+    font-weight: bold;
+}
+.button{
+    font-size: 17px !important;
+    font-weight: bold !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    justify-content: center !important;
+}
+.display-grid{
+    display: grid !important;
+}
