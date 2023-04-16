@@ -8,16 +8,21 @@ const RangeInput = () => {
     const [ valueHeight , setValueHeight ] = React.useState(150);
     const Result = Math.round(valueWeight / ((valueHeight/100)*(valueHeight/100)))
     let Bmi="";
+    let color="";
     if(Result < 18){
         Bmi = "You are underweight"
+        color="color1"
     }
     else if ( 18 <= Result && Result < 25) {
         Bmi = "You are normal"
+        color="color2"
     } 
     else if (25 <= Result && Result < 40) {
         Bmi = "You are overweight"
+        color="color3"
     } else {
         Bmi = "You are obese"
+        color="color4"
     }
   return (
     <>
@@ -34,9 +39,8 @@ const RangeInput = () => {
                <h5>{valueHeight}cm</h5>
                <h4>Your BMI is : {Result}</h4>
                <div className='display-grid'>
-               <h4>{Bmi}</h4>
+               <h4 className={color}>{Bmi}</h4>
                </div>
-               
                </Col>
                <Col md={2}></Col>
         </Row>

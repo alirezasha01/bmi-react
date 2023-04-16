@@ -17,3 +17,18 @@ h1 , h4{
 .display-grid{
     display: grid !important;
 }
+.color1{
+color:yellow;
+}
+.color2{
+    color: green;
+
+}
+.color3{
+    color: orangered;
+
+}
+.color4{
+    color: red;
+
+}
